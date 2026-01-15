@@ -23,11 +23,28 @@ Chaque interaction compte. Savoir gérer un refus, rassurer un client inquiet ou
 
 ---
 
-## 🏆 Objectifs Pédagogiques
+## ⚙️ Comment Fonctionne le Système ?
 
-*   **Maîtriser la Psychologie Client** : Comprendre qui on a en face (Médecin, Artisan, CEO...).
-*   **Développer l'Empathie** : Créer un lien humain fort et durable.
-*   **Construire des Stratégies** : Proposer des plans d'action cohérents (SEO + Ads + Web) adaptés à chaque situation.
+La plateforme repose sur une **Intelligence Artificielle de pointe (Llama-3)** configurée comme un "Coach Intraitable". Voici le mécanisme d'apprentissage :
+
+### 🧠 1. Le Générateur de Scénarios Infinis
+Contrairement à un quiz statique, l'IA génère des situations uniques à chaque session :
+*   **Profils Variés** : Médecin, Artisan BTP, Avocat, Commerçant...
+*   **Problématiques Réelles** : "Je perds des clients", "J'ai de mauvais avis", "Mon site est invisible".
+*   L'utilisateur est plongé dans un contexte immersif qu'il doit analyser.
+
+### 💬 2. La Simulation de Dialogue (Quiz Dynamique)
+L'IA propose 4 approches stratégiques pour chaque situation :
+*   **💡 L'Approche Consultante** : Poser des questions, auditer (La voie du succès).
+*   **🎯 L'Approche Vendeur** : Proposer un produit trop vite (Le piège).
+*   **⚡ L'Approche Technique** : Noyer le client sous le jargon (L'erreur).
+*   **🔥 L'Approche Empathique** : Rassurer et connecter.
+
+### 📊 3. Feedback Instantané & Correction
+L'IA analyse votre choix et réagit immédiatement comme le ferait un vrai client ou un coach :
+*   `[SUCCESS]` ✅ : Vous avez compris le besoin. L'IA explique *pourquoi* c'était la bonne approche.
+*   `[ECHEC]` ❌ : Vous avez été trop agressif ou hors sujet. L'IA vous sanctionne et vous explique la psychologie du client.
+*   `[RISQUE]` ⚠️ : Votre réponse est passable mais dangereuse pour le closing.
 
 ---
 
