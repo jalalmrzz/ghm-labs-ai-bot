@@ -209,7 +209,7 @@ const ChatScreen = ({ onBack }) => {
                 <div className="status-panel">
                     <div className="status-item">
                         <div className="led led-green led-blink" />
-                        <span style={{ color: '#00e5ff' }}>REACT: ON</span>
+                        <span style={{ color: '#ff80bf' }}>REACT: ON</span>
                     </div>
                 </div>
 
