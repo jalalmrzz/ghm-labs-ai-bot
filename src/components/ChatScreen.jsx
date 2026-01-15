@@ -209,7 +209,7 @@ const ChatScreen = ({ onBack }) => {
                 <div className="status-panel">
                     <div className="status-item">
                         <div className="led led-green led-blink" />
-                        <span>REACT: ON</span>
+                        <span style={{ color: '#00e5ff' }}>REACT: ON</span>
                     </div>
                 </div>
 
@@ -224,16 +224,16 @@ const ChatScreen = ({ onBack }) => {
 
                 <div className="status-panel">
                     <div className="status-item">
-                        <span>VITE: 5.0</span>
+                        <span style={{ color: '#bd34fe' }}>VITE: 5.0</span>
                         <div className="led led-green" />
                     </div>
                     <div className="status-item">
-                        <span>GROQ: LNK</span>
+                        <span style={{ color: '#ff9f1c' }}>GROQ: LNK</span>
                         <div className="led led-yellow led-blink" />
                     </div>
                     <a href="https://github.com/jalalmrzz/ghm-labs-ai-bot" target="_blank" rel="noopener noreferrer" className="status-item" style={{ cursor: 'pointer', marginLeft: '10px', textDecoration: 'none' }}>
-                        <span>GITHUB LINK</span>
-                        <Download size={16} color="#00ffcc" />
+                        <span style={{ color: '#00ff00' }}>GITHUB LINK</span>
+                        <Download size={16} color="#00ff00" />
                     </a>
                 </div>
             </div>
