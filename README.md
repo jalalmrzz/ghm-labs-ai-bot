@@ -1,93 +1,35 @@
-# 🤖 GHM LABS AI BOT - TRAINING SYSTEM
+# 🎯 GHM LABS AI TRAINING SYSTEM
 
-Bienvenue dans le **GHM LABS AI BOT**, la plateforme d'entraînement ultime pour les consultants digitaux de GHM LABS à Kénitra.
+## 🚀 Notre Mission : Former l'Élite du Conseil Digital
 
-Ce projet est une **simulation de vente consultative** alimentée par l'Intelligence Artificielle (Groq/Llama-3), conçue pour muscler les compétences commerciales de notre équipe.
+Ce projet est le cœur du programme d'excellence de **GHM LABS**. Il a été conçu avec un objectif unique : **transformer nos équipes en consultants d'élite.**
 
-![GHM AI Bot Preview](https://via.placeholder.com/800x400?text=GHM+LABS+AI+BOT+TRAINING)
-
----
-
-## 🎯 Objectif du Projet
-
-L'objectif n'est pas seulement de vendre, mais de **DIAGNOSTIQUER** et **RÉSOUDRE** les problèmes de nos clients.
-Nous formons des consultants, pas des vendeurs de tapis.
-
-### Les 4 Piliers de la Formation :
-1.  **L'Écoute Active** : Comprendre le "pain point" (douleur) du client.
-2.  **L'Analyse** : Proposer la bonne solution (SEO, Ads, Web) au bon moment.
-3.  **L'Empathie** : Gérer les objections et les émotions.
-4.  **La Stratégie** : Construire des plans d'action long terme.
+L'objectif n'est pas d'apprendre à "vendre", mais d'apprendre à **AIDER**.
 
 ---
 
-## 🚀 Fonctionnalités Clés
+## 💡 Philosophie du Programme
 
-*   **⚡ Interface Rétro-Futuriste (Cyberpunk 80s)** :
-    *   Terminal de commande vert fluo.
-    *   Effets sonores immersifs de frappe clavier.
-    *   Police `DS-Digital` et `JetBrains Mono` pour un look hacker authentique.
-    *   Icone robot animée avec yeux clignotants (HTML/CSS Pur).
+Chez GHM LABS, nous ne cherchons pas des vendeurs agressifs. Nous formons des stratèges capables de comprendre et de résoudre les vrais problèmes de nos clients.
 
-*   **🧠 IA "Coach Intraitable"** :
-    *   Propulsée par **Llama-3-70b**.
-    *   Scénarios infinis et aléatoires (Médecin, Avocat, Commerçant...).
-    *   Feedback en temps réel : `[ECHEC]`, `[RISQUE]`, `[SUCCESS]`.
-    *   Sanctionne le "Pitch Slapping" (vendre sans écouter).
+### 1. Le Diagnostic avant la Vente
+"Pitcher" un service sans comprendre le besoin est une erreur fatale. Cet outil entraîne nos consultants à poser les bonnes questions, à écouter activement et à détecter les "pain points" (douleurs) du client avant de proposer la moindre solution.
 
-*   **🎨 Expérience Visuelle Premium** :
-    *   Background 3D Robot animé.
-    *   Highlighting intelligent des mots-clés (SEO, ADS, CHIFRE D'AFFAIRE).
-    *   Code couleur strict pour les options de réponse (Cyan, Violet, Orange, Rouge).
+### 2. La Vente Consultative
+Nous ne vendons pas des sites web ou de la publicité. Nous vendons de la **Croissance**, de la **Visibilité** et de la **Tranquillité d'esprit**. L'IA simule des scénarios complexes pour tester la capacité de l'équipe à articuler cette valeur ajoutée.
+
+### 3. L'Excellence Relationnelle
+Chaque interaction compte. Savoir gérer un refus, rassurer un client inquiet ou canaliser un client pressé sont des compétences clés que nous forgeons ici quotidiennement.
 
 ---
 
-## 🛠️ Stack Technique
+## 🏆 Objectifs Pédagogiques
 
-*   **Core** : React 18 + Vite.
-*   **Style** : CSS Pur (Pas de frameworks lourds) pour un contrôle total.
-*   **IA** : Groq SDK (Llama 3.3).
-*   **Icons** : Lucide React + Custom CSS Animations.
-*   **Fonts** : DS-Digital (Locale) + Google Fonts (Outfit).
+*   **Maîtriser la Psychologie Client** : Comprendre qui on a en face (Médecin, Artisan, CEO...).
+*   **Développer l'Empathie** : Créer un lien humain fort et durable.
+*   **Construire des Stratégies** : Proposer des plans d'action cohérents (SEO + Ads + Web) adaptés à chaque situation.
 
 ---
 
-## 📦 Installation & Lancement
-
-1.  **Cloner le repo** :
-    ```bash
-    git clone https://github.com/ghm-labs/ai-bot.git
-    cd ghm-labs-ai-bot
-    ```
-
-2.  **Installer les dépendances** :
-    ```bash
-    npm install
-    ```
-
-3.  **Configurer la clé API** :
-    Créez un fichier `.env` à la racine et ajoutez votre clé Groq :
-    ```env
-    VITE_GROQ_API_KEY=votre_cle_api_ici
-    ```
-
-4.  **Lancer le QG d'entraînement** :
-    ```bash
-    npm run dev
-    ```
-
----
-
-## 🤝 Contribuer
-
-Les contributions sont les bienvenues pour rendre l'IA encore plus intelligente !
-1.  Forker le projet.
-2.  Créer une branche (`git checkout -b feature/AmazingFeature`).
-3.  Commit (`git commit -m 'Add some AmazingFeature'`).
-4.  Push (`git push origin feature/AmazingFeature`).
-5.  Ouvrir une Pull Request.
-
----
-
-**GHM LABS - UNIT-01 | REAL-WORLD-OPS**
-*Forging the Elite of Digital Consulting.*
+**GHM LABS - UNIT-01**
+*L'excellence n'est pas un acte, c'est une habitude.*
