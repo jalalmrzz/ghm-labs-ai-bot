@@ -9,6 +9,7 @@ import {
     Download
 } from 'lucide-react';
 import { sendMessageToBot } from '../lib/api/ghmBotAPI';
+import { questions } from '../data/questions';
 
 const TypewriterText = ({ text, onComplete }) => {
     const [displayedText, setDisplayedText] = useState('');
@@ -104,42 +105,60 @@ const ChatScreen = ({ onBack }) => {
     const [messages, setMessages] = useState([]);
     const [input, setInput] = useState('');
     const [isLoading, setIsLoading] = useState(false);
+    const [currentQuestion, setCurrentQuestion] = useState(null);
     const messagesEndRef = useRef(null);
+
+    // State to track if we are waiting to show the next mission
+    const [pendingNextMission, setPendingNextMission] = useState(null);
 
     const scrollToBottom = useCallback(() => {
         messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
     }, []);
 
-    // Initialize with first scenario from API
+    // Watch for message typewriting completion to trigger next events
+    useEffect(() => {
+        if (pendingNextMission) {
+            const lastMsg = messages[messages.length - 1];
+            // Check if the feedback message (which triggered the pending state) is finished
+            if (lastMsg && lastMsg.id === pendingNextMission.afterMessageId && lastMsg.isFinished) {
+                // The feedback message has finished typing, so now we show the next mission
+                const timer = setTimeout(() => {
+                    setMessages(prev => [...prev, pendingNextMission.missionMsg]);
+                    setPendingNextMission(null);
+                }, 1000); // Small pause for readability
+                return () => clearTimeout(timer);
+            }
+        }
+    }, [messages, pendingNextMission]);
+
+    // Function to format the question text for the bot to display
+    const formatQuestion = (q) => {
+        return `[SCÉNARIO] 📌 ${q.category}\n\n[IMPORTANT] PROBLÈME : ${q.scenario}\n\n👔 CIBLE : Client potentiel GHM\n\n${q.options.map(opt => `[${opt.id.toUpperCase()})] ${opt.text}`).join('\n')}`;
+    };
+
+    // Initialize with a RANDOM first scenario from our local bank
     useEffect(() => {
         const initChat = async () => {
             setIsLoading(true);
             try {
-                // Trigger a RANDOM first scenario
-                const topics = [
-                    "la vente d'un Site Vitrine à un avocat",
-                    "la vente de Google Ads à un plombier",
-                    "la vente de SEO à une clinique",
-                    "la vente d'un E-commerce à une boutique de vêtements",
-                    "la gestion d'un client mécontent des résultats Facebook Ads",
-                    "le closing d'un gros contrat avec une agence immobilière"
-                ];
-                const randomTopic = topics[Math.floor(Math.random() * topics.length)];
+                const randomIdx = Math.floor(Math.random() * questions.length);
+                const q = questions[randomIdx];
+                setCurrentQuestion(q);
 
-                const response = await sendMessageToBot([{ role: 'user', content: `Introduis le programme d'excellence GHM LABS et lance une mission de conseil sur le thème : ${randomTopic}.` }]);
-                const cleanResponse = response.replace(/<[^>]*>?/gm, '');
+                const intro = "Bienvenue dans le programme d'excellence commerciale GHM LABS. 🚀 Notre objectif est de booster tes compétences pour faire de toi un consultant d'élite. Ensemble, nous allons maîtriser l'art de la vente consultative.\n\nVoici ta première mission :\n\n";
+                const questionText = formatQuestion(q);
 
                 setMessages([
                     {
                         id: 1,
                         type: 'bot',
-                        text: cleanResponse,
+                        text: intro + questionText,
                         isFinished: false
                     }
                 ]);
             } catch (error) {
                 console.error("Init Error:", error);
-                setMessages([{ id: 'err', type: 'bot', text: "Erreur de connexion au serveur de formation. Veuillez réessayer.", isFinished: true }]);
+                setMessages([{ id: 'err', type: 'bot', text: "Erreur de connexion. Veuillez réessayer.", isFinished: true }]);
             } finally {
                 setIsLoading(false);
             }
@@ -152,8 +171,9 @@ const ChatScreen = ({ onBack }) => {
     }, [messages, scrollToBottom]);
 
     const handleSend = async () => {
-        if (!input.trim() || isLoading) return;
+        if (!input.trim() || isLoading || pendingNextMission) return;
 
+        const userInput = input.trim().toUpperCase();
         const userMsg = {
             id: Date.now(),
             type: 'user',
@@ -164,17 +184,66 @@ const ChatScreen = ({ onBack }) => {
         setInput('');
         setIsLoading(true);
 
-        // Prepare context for API
-        const apiContext = messages.map(m => ({
-            role: m.type === 'bot' ? 'assistant' : 'user',
-            content: m.text
-        }));
-        apiContext.push({ role: 'user', content: input });
-
         try {
-            const rawResponse = await sendMessageToBot(apiContext);
-            // Safety: Remove any HTML tags if the bot ignores the prompt
-            const cleanResponse = rawResponse.replace(/<[^>]*>?/gm, '');
+            let botText = "";
+
+            // Check if user is answering the current question (A, B, C, D)
+            const isAnswering = /^[A-D]$/.test(userInput);
+
+            if (isAnswering && currentQuestion) {
+                const isCorrect = userInput.toLowerCase() === currentQuestion.correctAnswer.toLowerCase();
+                const feedbackTag = isCorrect ? "[SUCCESS] ✅" : "[ECHEC] ❌";
+
+                // 1. Get Feedback from AI
+                const prompt = `L'utilisateur a choisi la réponse ${userInput} pour le scénario suivant : "${currentQuestion.scenario}". 
+                La réponse correcte était ${currentQuestion.correctAnswer.toUpperCase()} car : ${currentQuestion.explanation}.
+                
+                Donne une évaluation courte (max 3-4 lignes) avec ton style d'EXPERT GHM LABS. 
+                Commence par ${feedbackTag}.
+                Sois exigeant. Explique pourquoi c'est une faute ou un succès.`;
+
+                const aiFeedback = await sendMessageToBot([{ role: 'user', content: prompt }]);
+
+                const feedbackMsg = {
+                    id: Date.now() + 1,
+                    type: 'bot',
+                    text: aiFeedback.replace(/<[^>]*>?/gm, ''),
+                    isFinished: false
+                };
+                setMessages(prev => [...prev, feedbackMsg]);
+
+                // 2. Clear loading immediately so we see typewriting
+                setIsLoading(false);
+
+                // Prepare next mission but DO NOT show it yet
+                const nextIdx = Math.floor(Math.random() * questions.length);
+                const q = questions[nextIdx];
+                setCurrentQuestion(q);
+
+                const nextMissionMsg = {
+                    id: Date.now() + 2,
+                    type: 'bot',
+                    text: "--- MISSION RÉELLE SUIVANTE ---\n\n" + formatQuestion(q),
+                    isFinished: false
+                };
+
+                setPendingNextMission({
+                    afterMessageId: feedbackMsg.id,
+                    missionMsg: nextMissionMsg
+                });
+
+                return; // Prevent the default botMsg logic at the end
+            } else {
+                // Normal conversation mode
+                const apiContext = messages.map(m => ({
+                    role: m.type === 'bot' ? 'assistant' : 'user',
+                    content: m.text
+                }));
+                apiContext.push({ role: 'user', content: input });
+                botText = await sendMessageToBot(apiContext);
+            }
+
+            const cleanResponse = botText.replace(/<[^>]*>?/gm, '');
 
             const botMsg = {
                 id: Date.now() + 1,
@@ -185,6 +254,7 @@ const ChatScreen = ({ onBack }) => {
             setMessages(prev => [...prev, botMsg]);
         } catch (error) {
             console.error("Chat Error:", error);
+            setMessages(prev => [...prev, { id: 'err', type: 'bot', text: "❌ Erreur de connexion API.", isFinished: true }]);
         } finally {
             setIsLoading(false);
         }

@@ -2,106 +2,106 @@ export const questions = [
     {
         id: 1,
         category: "Communication Client",
-        scenario: "Un client vous appelle furieux car sa campagne n'a généré que 10 leads ce mois-ci, alors qu'il en attendait 50. Que faites-vous ?",
+        scenario: "Vous arrivez au bureau. Votre téléphone sonne : c'est Mr. Alami (Client Immobilier). Il hurle presque : 'C'est quoi ces résultats ?! J'ai payé 5000 DH et j'ai eu 3 appels de curieux qui n'ont pas d'argent ! Vous m'avez promis 50 leads ! Je veux mon argent tout de suite !'. Il est très en colère et menace de vous faire une mauvaise réputation sur LinkedIn.",
         options: [
-            { id: "a", text: "Je m'excuse platement et je lui offre un remboursement partiel immédiatement." },
-            { id: "b", text: "Je reste calme, je l'écoute, puis je propose d'analyser ensemble la qualité des leads plutôt que la quantité." },
-            { id: "c", text: "Je lui explique que c'est la faute de l'algorithme de Facebook et que je n'y peux rien." },
-            { id: "d", text: "Je ne réponds pas au téléphone et j'attends le lendemain pour envoyer un email technique." }
+            { id: "a", text: "Je m'excuse platement et je lui offre un remboursement partiel immédiatement pour calmer le jeu." },
+            { id: "b", text: "Je garde un ton calme et professionnel : 'Mr Alami, je comprends votre frustration. Prenons 5 minutes pour regarder les chiffres ensemble. Je vois ici 12 clics qualifiés. Le problème n'est peut-être pas la quantité, mais le ciblage. Analysons la qualité ensemble'." },
+            { id: "c", text: "Je lui explique que c'est la faute de l'algorithme de Facebook, que c'était un mois difficile et que je n'y peux rien." },
+            { id: "d", text: "Je ne réponds pas et j'attends qu'il se calme le lendemain pour envoyer un email technique." }
         ],
         correctAnswer: "b",
-        explanation: "L'empathie et l'écoute sont cruciales. En orientant la discussion vers le ROI (qualité des leads), vous valorisez votre travail et calmez le jeu avec des données concrètes."
+        explanation: "L'empathie et l'écoute sont cruciales, mais ne cédez pas à la panique. En orientant la discussion vers l'analyse objective (ROI/Qualité), vous reprenez le contrôle de l'expert face à l'émotion du client."
     },
     {
         id: 2,
         category: "Négociation",
-        scenario: "Un prospect vous dit : 'Votre devis est trop cher, mon cousin peut me faire le site pour 200€'. Quelle est votre réponse ?",
+        scenario: "Vous présentez le devis pour la refonte du site E-commerce à 15.000 DH. Le prospect, un grossiste, rit jaune : 'Vous rigolez ? Mon cousin est étudiant en informatique, il m'a dit qu'il pouvait me faire la même chose sur WordPress pour 2000 DH ce week-end. Pourquoi je vous paierais 7 fois plus cher ?'.",
         options: [
-            { id: "a", text: "Je m'aligne sur le prix du cousin pour ne pas perdre le client." },
-            { id: "b", text: "Je lui dis que son cousin est un amateur et que son site sera nul." },
-            { id: "c", text: "J'explique que mon tarif inclut une stratégie de conversion et un accompagnement pro que le cousin n'offre pas." },
-            { id: "d", text: "Je lui souhaite bonne chance avec son cousin et je raccroche." }
+            { id: "a", text: "Je m'aligne sur le prix du cousin à 2000 DH pour ne pas perdre le client, quitte à réduire la qualité." },
+            { id: "b", text: "Je critique son cousin en disant qu'il est incompétent et que son site va planter." },
+            { id: "c", text: "Je souris et réponds : 'C'est génial pour votre cousin. Mais ici, on ne vend pas juste du code, on vend une boutique qui convertit. Mon tarif inclut le design UX pour vendre, le SEO pour être visible, et la sécurité bancaire. Votre cousin offre-t-il une garantie de conversion ?'." },
+            { id: "d", text: "Je me vexe, je range mes affaires et je pars en lui souhaitant bonne chance." }
         ],
         correctAnswer: "c",
-        explanation: "Vendez la valeur, pas le prix. Montrez ce que le client perd en choisissant l'option 'bon marché' (manque de stratégie, conversion faible, pas de support)."
+        explanation: "Ne combattez pas le prix, combattez la valeur perçue. Montrez le fossé entre 'bricolage' (le cousin) et 'business rentabke' (votre offre). Le client paie pour la tranquillité et le résultat, pas pour des lignes de code."
     },
     {
         id: 3,
         category: "Gestion de Crise",
-        scenario: "Vous avez fait une faute d'orthographe dans le nom du client sur une publicité qui a déjà dépensé 500€. Le client s'en aperçoit.",
+        scenario: "CATASTROPHE. Vous gérez la page Facebook d'une clinique. Vous avez programmé une publicité hier soir, mais vous avez fait une faute de frappe dans le titre : 'Clinique de la Morte' au lieu de 'Clinique de la Mode'. La pub a tourné toute la nuit, dépensé 500 DH et il y a 50 commentaires qui se moquent. Le directeur vous appelle.",
         options: [
-            { id: "a", text: "Je nie avoir fait l'erreur et je dis que c'est un bug d'affichage." },
-            { id: "b", text: "J'arrête tout de suite la pub, j'assume l'erreur auprès du client et je propose de compenser les 500€." },
-            { id: "c", text: "Je corrige discrètement et j'espère qu'il ne s'en rendra pas compte." },
-            { id: "d", text: "Je lui dis que l'orthographe n'est pas importante tant que les gens cliquent." }
+            { id: "a", text: "Je nie avoir fait l'erreur et je dis que c'est un piratage ou un bug de Facebook." },
+            { id: "b", text: "Je coupe la pub, j'appelle le directeur AVANT qu'il ne m'appelle : 'J'ai fait une erreur grave. Je l'ai corrigée, et pour m'excuser, je prends les 500 DH de perte à ma charge sur la prochaine facture'." },
+            { id: "c", text: "Je corrige discrètement la faute et j'efface les commentaires en espérant que personne n'a fait de capture d'écran." },
+            { id: "d", text: "Je lui dis que l'orthographe n'est pas grave car ça a fait du buzz et de la visibilité gratuite." }
         ],
         correctAnswer: "b",
-        explanation: "L'honnêteté renforce la confiance à long terme. Assumer une erreur et proposer une solution (compensation ou geste commercial) est la marque d'un professionnel."
+        explanation: "L'honnêteté radicale est la seule sortie. En prévenant le client et en payant pour votre erreur, vous montrez une intégrité totale. Cacher l'erreur détruirait la confiance à jamais."
     },
     {
         id: 4,
         category: "Présentation de Résultats",
-        scenario: "Lors d'un rapport mensuel, le client ne comprend pas le terme 'CTR' ou 'Taux de rebond'. Que faites-vous ?",
+        scenario: "Réunion mensuelle avec un client B2B (Industrie). Vous projetez des slides avec des graphiques. Le client fronce les sourcils quand vous dites : 'Le CTR est monté à 2% et le Taux de Rebond a baissé de 15%'. Il vous coupe : 'Arrêtez avec vos mots chinois. Ça me rapporte combien tout ça ? Je ne comprends rien !'.",
         options: [
-            { id: "a", text: "Je continue d'utiliser le jargon car ça fait expert." },
-            { id: "b", text: "Je lui donne une définition dictionnaire complexe." },
-            { id: "c", text: "Je traduis en langage business : 'le CTR, c'est l'intérêt que les gens portent à votre message'." },
-            { id: "d", text: "Je lui dis qu'il n'a pas besoin de comprendre ces détails techniques." }
+            { id: "a", text: "Je continue d'utiliser le jargon pour lui montrer que je suis un technicien expert." },
+            { id: "b", text: "Je lui donne la définition académique du CTR et du Taux de Rebond." },
+            { id: "c", text: "Je change immédiatement de langage : 'Pardon. En clair : 2 fois plus de gens intéressés ont cliqué, et ils sont restés plus longtemps sur le site, ce qui veut dire qu'on a capté des prospects plus chauds'." },
+            { id: "d", text: "Je lui dis qu'il n'a pas besoin de comprendre la technique, juste de me faire confiance." }
         ],
         correctAnswer: "c",
-        explanation: "Un client qui comprend vos rapports est un client qui renouvellera son contrat. Simplifiez toujours la donnée pour la rendre actionnable pour son business."
+        explanation: "Un client confus est un client qui part. Votre rôle est de TRADUIRE la donnée technique en impact business compréhensible. Adaptez votre vocabulaire à celui du client."
     },
     {
         id: 5,
         category: "Vente",
-        scenario: "Un client potentiel hésite à signer le contrat car il a peur de ne pas avoir de résultats. Quelle est la meilleure approche ?",
+        scenario: "Vous êtes en closing. Le client (Gérant de Salle de Sport) a le stylo en main mais hésite. Il pose le stylo : 'J'ai peur de m'engager sur 6 mois... Et si ça ne marche pas ? C'est beaucoup d'argent pour moi'. Il vous regarde dans les yeux, anxieux.",
         options: [
-            { id: "a", text: "Je lui garantis par écrit qu'il aura 100 ventes par mois (même si c'est incertain)." },
-            { id: "b", text: "Je lui présente des études de cas similaires et je fixe des objectifs réalistes par paliers." },
-            { id: "c", text: "Je lui mets la pression en disant que l'offre expire dans une heure." },
-            { id: "d", text: "Je lui dis que le marketing est une loterie et qu'on verra bien." }
+            { id: "a", text: "Je lui promets par écrit qu'il aura 100 inscriptions par mois (même si c'est impossible à garantir)." },
+            { id: "b", text: "Je sors mon dossier 'Preuve Sociale' : 'Je comprends. Regardez ces 3 autres salles qu'on a accompagnées. Voici leurs résultats au mois 1, 3 et 6. On ne promet pas la lune, mais on a une méthode prouvée. Commençons par un objectif réaliste de 20 inscrits'." },
+            { id: "c", text: "Je lui mets la pression : 'L'offre spéciale expire dans 10 minutes. C'est maintenant ou jamais'." },
+            { id: "d", text: "Je lui dis que le business c'est du risque et qu'il faut être courageux." }
         ],
         correctAnswer: "b",
-        explanation: "La preuve sociale (études de cas) et la transparence sur les objectifs réduisent l'anxiété d'achat sans faire de promesses mensongères dangereuses."
+        explanation: "Face à la peur, apportez la RASSURANCE, pas la pression. La preuve sociale (cas similaires) et des objectifs progressifs débloquent la peur de l'échec."
     },
     {
         id: 6,
         category: "Communication Client",
-        scenario: "Un client vous envoie un message WhatsApp à 22h un dimanche pour une modification 'urgente' sur sa campagne. Que faites-vous ?",
+        scenario: "Dimanche soir, 22h30. Vous êtes en famille. Votre téléphone vibre non-stop. C'est un client qui vous envoie 10 messages WhatsApp et 3 photos : 'Change la bannière du site MAINTENANT, j'ai une nouvelle idée ! C'est URGENT !'.",
         options: [
-            { id: "a", text: "Je réponds immédiatement et je fais la modification pour montrer que je suis dévoué." },
-            { id: "b", text: "Je ne réponds pas et je traite la demande le lundi matin à l'ouverture du bureau." },
-            { id: "c", text: "Je réponds que je ne travaille pas le dimanche et qu'il est impoli." },
-            { id: "d", text: "Je prévois un message automatique de courtoisie et je traite le lundi matin." }
+            { id: "a", text: "Je laisse ma famille, je saute sur mon ordi et je fais la modif pour montrer que je suis ultra-réactif." },
+            { id: "b", text: "Je ne réponds pas. Je laisse le téléphone de côté. Lundi matin à 9h00, je l'appelle pour traiter sa demande calmement." },
+            { id: "c", text: "Je lui réponds énervé : 'C'est dimanche, respectez ma vie privée !'." },
+            { id: "d", text: "J'ai configuré une réponse automatique WhatsApp Business : 'Merci de votre message. Nos horaires sont Lun-Ven 9h-18h. Votre demande sera traitée en priorité demain matin'." }
         ],
         correctAnswer: "d",
-        explanation: "Fixer des limites est essentiel pour la survie de votre agence. Un professionnel éduque ses clients sur ses horaires dès le début du contrat."
+        explanation: "Éduquez vos clients. Si vous répondez le dimanche, vous devenez l'esclave du client pour toujours. L'automatisation (réponse auto) est la manière professionnelle de dire 'Non, mais je vous ai entendu'."
     },
     {
         id: 7,
         category: "Vente",
-        scenario: "Un prospect vous demande : 'Pouvez-vous me garantir un retour sur investissement (ROI) de 500% ?' Que répondez-vous ?",
+        scenario: "Le prospect est un investisseur sérieux. Il vous challenge : 'Très bien votre présentation GHM. Mais moi je veux du concret. Pouvez-vous me GARANTIR un ROI de 500% sur 3 mois ? Si vous garantissez, je signe un chèque de 100.000 DH tout de suite'.",
         options: [
-            { id: "a", text: "Oui, je le garantis sans problème pour signer le contrat." },
-            { id: "b", text: "Non, c'est impossible, personne ne peut faire ça." },
-            { id: "c", text: "Je ne garantis pas de chiffre précis car trop de facteurs externes jouent, mais je garantis une optimisation constante basée sur vos KPIs." },
-            { id: "d", text: "Je lui dis que cela dépend uniquement de son produit et pas de mon travail." }
+            { id: "a", text: "Je dis 'OUI' tout de suite pour prendre le chèque, on verra après." },
+            { id: "b", text: "Je dis 'Non, c'est impossible'." },
+            { id: "c", text: "Je le regarde droit dans les yeux : 'Monsieur, si je vous garantissais ça, je serais un menteur. Le marché change. Par contre, je vous garantis une optimisation quotidienne et une transparence totale. Est-ce que vous préférez un menteur qui vous rassure ou un expert qui se bat pour vos résultats ?'." },
+            { id: "d", text: "Je lui dis que ça dépendra de la qualité de ses produits, pas de moi." }
         ],
         correctAnswer: "c",
-        explanation: "Ne promettez jamais ce que vous ne contrôlez pas à 100%. Le marketing n'est pas une science infuse; la transparence sur les risques vous donne de la crédibilité."
+        explanation: "La transparence radicale (Radical Candor) bat la fausse promesse. Les vrais décideurs respectent ceux qui ne se couchent pas devant l'argent et qui gardent leur intégrité technique."
     },
     {
         id: 8,
-        category: "Prix",
-        scenario: "Un client actuel vous demande une prestation supplémentaire qui n'est pas dans le contrat initial, mais qui est 'rapide à faire'.",
+        category: "Prix & Contrat",
+        scenario: "Vous avez fini le site web du client comme prévu. Il vous appelle : 'C'est super ! Ah, au fait, j'ai besoin d'une petite page en plus pour mes partenaires, et un système de réservation... Ça prend 5 minutes non ? Tu me fais ça en cadeau ?'.",
         options: [
-            { id: "a", text: "Je le fais gratuitement pour lui faire plaisir." },
-            { id: "b", text: "Je lui explique que c'est hors contrat et je lui envoie un avenant de prix." },
-            { id: "c", text: "Je le fais une fois, mais je l'avertis que la prochaine fois ce sera payant." },
-            { id: "d", text: "Je refuse catégoriquement sans explication." }
+            { id: "a", text: "Je le fais gratuitement pour éviter le conflit et le fidéliser." },
+            { id: "b", text: "Je réponds : 'Avec plaisir ! Pour ces ajouts (Page + Réservation), cela représente 2 jours de travail dev. Je vous envoie le devis complémentaire tout de suite, on le valide et je lance ça'." },
+            { id: "c", text: "Je le fais une fois, mais je lui dis que c'est la dernière fois." },
+            { id: "d", text: "Je refuse en disant que ce n'est pas dans le contrat." }
         ],
         correctAnswer: "b",
-        explanation: "Le 'Scope Creep' (dérapage du périmètre) tue la rentabilité. Tout travail mérite salaire, même s'il est rapide. L'avenant protège votre temps."
+        explanation: "Luttez contre le 'Scope Creep' (dérapage de mission). Tout travail mérite salaire. Valorisez votre temps. Si vous dites 'Oui' gratuitement, votre temps ne vaut plus rien."
     },
     {
         id: 9,
@@ -258,5 +258,395 @@ export const questions = [
         ],
         correctAnswer: "c",
         explanation: "Le contrat est votre meilleur ami. Il permet de réguler les indécisions du client sans transformer le projet en gouffre financier pour vous."
+    },
+    {
+        id: 21,
+        category: "Prospection Terrain",
+        scenario: "Vous entrez dans une agence immobilière de luxe. Le gérant vous regarde à peine et dit : 'On a déjà tout, ne perdez pas mon temps'.",
+        options: [
+            { id: "a", text: "Je m'excuse et je sors discrètement." },
+            { id: "b", text: "Je réponds : 'Je vois que vous êtes un expert. Justement, j'ai remarqué un détail sur votre fiche Google qui fait fuir vos clients. On en parle 2 minutes ?'." },
+            { id: "c", text: "Je lui tends ma carte de visite et je lui demande de m'appeler quand il aura le temps." },
+            { id: "d", text: "Je commence à lister les services de GHM LABS à voix haute." }
+        ],
+        correctAnswer: "b",
+        explanation: "Sur le terrain, il faut casser le schéma mental du prospect. En pointant un problème précis et immédiat (douleur), vous captez son attention instantanément."
+    },
+    {
+        id: 22,
+        category: "Closing",
+        scenario: "Le client est prêt à signer à 4000 DH, mais il demande soudainement : 'Si je prends le contrat sur un an, vous me faites -50% ?'.",
+        options: [
+            { id: "a", text: "J'accepte tout de suite pour verrouiller le contrat." },
+            { id: "b", text: "Je refuse catégoriquement sans négocier." },
+            { id: "c", text: "Je réponds : 'Une remise de 50% n'est pas possible car nos experts s'investissent à fond. Par contre, je peux vous offrir le premier mois de gestion Ads si on signe aujourd'hui.'." },
+            { id: "d", text: "Je lui demande combien il est prêt à payer alors." }
+        ],
+        correctAnswer: "c",
+        explanation: "Ne bradez jamais votre valeur de moitié. Proposez un bonus à faible coût pour vous mais à haute valeur perçue pour lui pour conclure la vente."
+    },
+    {
+        id: 23,
+        category: "Gestion de Crise",
+        scenario: "En pleine présentation de site web, le site plante et affiche une erreur 404 devant le client. Que faites-vous ?",
+        options: [
+            { id: "a", text: "Je panique et je m'excuse pendant 10 minutes." },
+            { id: "b", text: "Je reste de marbre : 'C'est parfait, cela montre la sécurité de nos serveurs de test en cours de maintenance. Passons à la structure des pages sur mes slides.'." },
+            { id: "c", text: "Je blâme le développeur devant le client." },
+            { id: "d", text: "Je ferme mon ordinateur et je propose de reporter la réunion." }
+        ],
+        correctAnswer: "b",
+        explanation: "Gardez votre sang-froid (le 'Poker Face'). Le client achète votre assurance. Détournez l'attention vers la valeur (stratégie) plutôt que sur l'incident technique passager."
+    },
+    {
+        id: 24,
+        category: "Vente Consultative",
+        scenario: "Un propriétaire de café veut 'plus de likes' sur Facebook. Vous savez que les Facebook Ads pour des réservations directes seraient plus rentables.",
+        options: [
+            { id: "a", text: "Je vends un package de likes car c'est ce qu'il a demandé." },
+            { id: "b", text: "Je lui explique que les likes ne paient pas les factures, et je lui montre une simulation de revenus avec des publicités de conversion." },
+            { id: "c", text: "Je lui dis qu'il n'y comprend rien au marketing." },
+            { id: "d", text: "Je lui vends les deux pour gagner plus d'argent." }
+        ],
+        correctAnswer: "b",
+        explanation: "Votre rôle de consultant GHM est de conseiller ce qui rapporte de l'argent (ROI), pas de simplement satisfaire l'ego du client avec des métriques inutiles."
+    },
+    {
+        id: 25,
+        category: "Négociation",
+        scenario: "Un grand groupe local vous demande un délai de paiement de 90 jours. Que faites-vous ?",
+        options: [
+            { id: "a", text: "J'accepte, c'est un gros client donc je subis." },
+            { id: "b", text: "Je refuse et je demande un paiement comptant à la signature." },
+            { id: "c", text: "Je propose : 'Pour un compte de votre envergure, nous acceptons exceptionnellement 45 jours si nous validons un contrat d'accompagnement de 12 mois.'." },
+            { id: "d", text: "Je demande une avance de 10% seulement." }
+        ],
+        correctAnswer: "c",
+        explanation: "Négociez toujours un avantage en échange d'une concession. Si vous cédez sur le délai, demandez de la récurrence (contrat long) pour sécuriser votre trésorerie."
+    },
+    {
+        id: 26,
+        category: "E-réputation",
+        scenario: "Un concurrent de votre client vient de laisser 10 faux avis 1 étoile sur sa page Google My Business ce matin.",
+        options: [
+            { id: "a", text: "Je conseille au client d'ignorer et d'attendre." },
+            { id: "b", text: "Je réponds à chaque avis de manière agressive pour les démasquer." },
+            { id: "c", text: "Je mets en place une procédure de signalement immédiate à Google et je lance une campagne d'avis positifs auprès de ses vrais clients." },
+            { id: "d", text: "Je demande au client de fermer sa page Google." }
+        ],
+        correctAnswer: "c",
+        explanation: "La réactivité est la clé. On ne supprime pas facilement un avis, mais on peut le noyer sous du positif et lancer des alertes officielles."
+    },
+    {
+        id: 27,
+        category: "Prospection",
+        scenario: "La secrétaire vous bloque le passage : 'M. le Directeur ne reçoit personne sans rendez-vous'.",
+        options: [
+            { id: "a", text: "Je m'en vais et je reviens demain." },
+            { id: "b", text: "Je lui dis que c'est une urgence vitale pour la boîte." },
+            { id: "c", text: "Je valorise son rôle : 'Je comprends, vous protégez son temps. Je lui ai préparé un audit de 2 pages sur sa visibilité à Kénitra. Pouvez-vous lui poser sur son bureau ? Je le rappelle demain à 10h.'." },
+            { id: "d", text: "Je lui demande son numéro personnel pour passer outre." }
+        ],
+        correctAnswer: "c",
+        explanation: "Traitez la secrétaire comme une alliée, pas un obstacle. Donnez-lui une mission valorisante (déposer un document de valeur) pour entrer dans le radar du décideur."
+    },
+    {
+        id: 28,
+        category: "Vente",
+        scenario: "Un client vous demande : 'Pourquoi devrais-je travailler avec GHM LABS plutôt qu'avec une agence à Casablanca ?'.",
+        options: [
+            { id: "a", text: "Parce qu'on est moins chers." },
+            { id: "b", text: "Parce qu'on est à Kénitra, on connaît le marché local et on peut être dans vos bureaux en 10 minutes s'il y a un problème." },
+            { id: "c", text: "Parce que les agences de Casa sont des arnaqueurs." },
+            { id: "d", text: "Je ne sais pas, on fait le même travail." }
+        ],
+        correctAnswer: "b",
+        explanation: "La proximité et la réactivité sont des arguments massifs pour un chef d'entreprise local. Vendre l'humain et la présence physique bat souvent le prestige lointain."
+    },
+    {
+        id: 29,
+        category: "Closing",
+        scenario: "Le client a validé le devis oralement, mais cela fait 10 jours qu'il ne signe pas le document envoyé par email.",
+        options: [
+            { id: "a", text: "Je le harcèle en l'appelant 3 fois par jour." },
+            { id: "b", text: "J'attends qu'il se manifeste." },
+            { id: "c", text: "Je passe le voir avec une version papier : 'Je passais dans le quartier, j'en ai profité pour vous apporter le dossier pour qu'on commence la prod dès demain.'." },
+            { id: "d", text: "Je lui envoie un email de menace d'annulation d'offre." }
+        ],
+        correctAnswer: "c",
+        explanation: "Le retour au physique élimine les barrières du digital (emails perdus ou oubliés). C'est le 'coup de grâce' pour un closing efficace."
+    },
+    {
+        id: 30,
+        category: "Expertise GHM",
+        scenario: "Un prospect vous dit que le SEO est mort et que seul TikTok compte aujourd'hui.",
+        options: [
+            { id: "a", text: "Je suis d'accord et je vends du TikTok." },
+            { id: "b", text: "Je lui montre que 80% des intentions d'achat passent encore par Google Search et que TikTok est un complément de notoriété, pas de conversion directe." },
+            { id: "c", text: "Je lui dis qu'il est démodé." },
+            { id: "d", text: "Je refuse de travailler avec quelqu'un qui pense ça." }
+        ],
+        correctAnswer: "b",
+        explanation: "Éduquez votre prospect. Différenciez la 'Hype' (TikTok) de la 'Rentabilité Froide' (SEO/Google). L'équilibre des canaux est la marque d'une vraie stratégie d'agence."
+    },
+    {
+        id: 31,
+        category: "Écoute Active",
+        scenario: "En début de RDV, le client vous dit : 'Je n'ai que 10 minutes'. Que faites-vous ?",
+        options: [
+            { id: "a", text: "Je parle deux fois plus vite pour tout dire." },
+            { id: "b", text: "Je dis : 'C'est court. Allons à l'essentiel : quel est le problème N°1 qui freine votre croissance aujourd'hui ?'." },
+            { id: "c", text: "Je m'excuse et je propose un autre RDV." },
+            { id: "d", text: "Je lui tends ma brochure et je pars." }
+        ],
+        correctAnswer: "b",
+        explanation: "Acceptez la contrainte et pivotez immédiatement sur SA douleur. S'il parle de son problème, les 10 minutes deviendront une heure."
+    },
+    {
+        id: 32,
+        category: "Closing",
+        scenario: "Le client dit : 'C'est intéressant, mais je ne peux pas décider maintenant, rappelez-moi le mois prochain'.",
+        options: [
+            { id: "a", text: "D'accord, je note dans mon agenda." },
+            { id: "b", text: "Je demande : 'Qu'est-ce qui aura changé le mois prochain qui rendra la décision plus facile ?'." },
+            { id: "c", text: "Je lui propose une réduction s'il signe maintenant." },
+            { id: "d", text: "Je lui dis qu'il fait une erreur." }
+        ],
+        correctAnswer: "b",
+        explanation: "Traitez l'objection 'temps' comme une objection cachée. Souvent, ce n'est pas le moment le problème, c'est l'incertitude ou le budget."
+    },
+    {
+        id: 33,
+        category: "Offre & Valeur",
+        scenario: "Vous présentez un devis SEO à 6000 DH/mois. Le client sursaute : 'C'est énorme !'.",
+        options: [
+            { id: "a", text: "Je baisse immédiatement à 3000 DH." },
+            { id: "b", text: "Je lui demande : 'Par rapport à quoi ? Combien vous rapporte un seul nouveau client par an ?'." },
+            { id: "c", text: "Je m'excuse, c'est vrai que c'est cher." },
+            { id: "d", text: "Je lui dis que la qualité se paie." }
+        ],
+        correctAnswer: "b",
+        explanation: "Recadrez le prix par rapport au retour sur investissement (ROI). Si votre SEO lui rapporte 100 000 DH, alors 6000 DH est une bonne affaire."
+    },
+    {
+        id: 34,
+        category: "Psychologie Client",
+        scenario: "Le client est très bavard et vous raconte ses vacances au lieu de parler business.",
+        options: [
+            { id: "a", text: "Je le coupe sèchement : 'Revenons à nos moutons'." },
+            { id: "b", text: "Je l'écoute 2 minutes, je crée du lien ('Sympa !'), puis je fais une transition douce : 'D'ailleurs, pour financer vos prochaines vacances, parlons de votre CA...'." },
+            { id: "c", text: "Je regarde ma montre avec insistance." },
+            { id: "d", text: "Je fais semblant d'être intéressé pendant 30 minutes." }
+        ],
+        correctAnswer: "b",
+        explanation: "Le rapport humain (Rapport Building) est vital, mais vous devez garder le contrôle du cadre (Frame). Utilisez son énergie pour revenir au business."
+    },
+    {
+        id: 35,
+        category: "Découverte",
+        scenario: "Vous ne savez pas quel budget le client a. Comment lui demander ?",
+        options: [
+            { id: "a", text: "Quel est votre budget maximum ?" },
+            { id: "b", text: "Combien voulez-vous dépenser ?" },
+            { id: "c", text: "Pour atteindre vos objectifs de +20% de ventes, quelle enveloppe d'investissement aviez-vous envisagée ?" },
+            { id: "d", text: "Avez-vous de l'argent ?" }
+        ],
+        correctAnswer: "c",
+        explanation: "Ne demandez pas un coût ('dépenser'), demandez un investissement lié à un objectif. Cela justifie la question et débloque la vérité."
+    },
+    {
+        id: 36,
+        category: "Objection",
+        scenario: "Le client dit : 'J'ai déjà essayé Facebook Ads ça ne marche pas'.",
+        options: [
+            { id: "a", text: "C'est parce que vous l'avez mal fait." },
+            { id: "b", text: "Ah bon ? Racontez-moi ce qui s'est passé exactement." },
+            { id: "c", text: "Avec nous ça marchera, promis." },
+            { id: "d", text: "Facebook a changé, c'est mieux maintenant." }
+        ],
+        correctAnswer: "b",
+        explanation: "Avant de contre-attaquer, enquêtez. Souvent, il a juste boosté un post sans stratégie. Votre diagnostic de son échec passé vendra votre expertise future."
+    },
+    {
+        id: 37,
+        category: "Vente Additionnelle",
+        scenario: "Le client est content de son Site Web livré. C'est le moment de...",
+        options: [
+            { id: "a", text: "Lui dire merci et au revoir." },
+            { id: "b", text: "Lui vendre un contrat de maintenance et SEO pour ne pas laisser son site 'mourir'." },
+            { id: "c", text: "Lui demander s'il connaît d'autres gens qui veulent un site." },
+            { id: "d", text: "Lui envoyer la facture finale." }
+        ],
+        correctAnswer: "b",
+        explanation: "Le 'Cross-sell' au moment de la satisfaction maximale est le plus facile. Transformez un projet 'One-shot' en revenu récurrent."
+    },
+    {
+        id: 38,
+        category: "Négociation",
+        scenario: "Le client vous compare à une grosse agence parisienne. 'Ils font la même chose que vous'.",
+        options: [
+            { id: "a", text: "Oui mais nous on est moins chers." },
+            { id: "b", text: "Non, eux ils sous-traitent tout. Nous, on est des artisans du digital, on fait du sur-mesure local." },
+            { id: "c", text: "Critiquer les parisiens." },
+            { id: "d", text: "Dire qu'on est pareils." }
+        ],
+        correctAnswer: "b",
+        explanation: "Différenciez-vous par l'approche 'Boutique' vs 'Usine'. La proximité, le sur-mesure et la réactivité sont vos armes fatales contre les gros."
+    },
+    {
+        id: 39,
+        category: "Communication",
+        scenario: "Vous devez annoncer une augmentation de vos tarifs annuels de 10% à un vieux client.",
+        options: [
+            { id: "a", text: "Je l'annonce par email en mettant le comptable en copie." },
+            { id: "b", text: "Je ne dis rien et change la facture en espérant qu'il ne voie rien." },
+            { id: "c", text: "Je l'appelle : 'Grâce à nos résultats, votre business a grandi. Pour maintenir ce niveau d'excellence et les nouveaux outils, nos tarifs s'ajustent...'." },
+            { id: "d", text: "Je m'excuse en disant que c'est l'inflation." }
+        ],
+        correctAnswer: "c",
+        explanation: "Vendez l'augmentation comme une garantie de qualité continue. Reliez-la à la valeur apportée, pas à vos coûts (inflation)."
+    },
+    {
+        id: 40,
+        category: "Closing",
+        scenario: "Le client : 'Envoyez-moi tout ça par mail, je regarderai'. (Le classique 'Brush-off')",
+        options: [
+            { id: "a", text: "Ok, je vous envoie ça tout de suite." },
+            { id: "b", text: "Je refuse d'envoyer des emails." },
+            { id: "c", text: "Bien sûr. Mais pour que mon mail soit pertinent, qu'est-ce que vous chercherez précisément à voir dedans : le prix ou la stratégie ?" },
+            { id: "d", text: "Je vous rappelle la semaine prochaine." }
+        ],
+        correctAnswer: "c",
+        explanation: "Ne soyez pas un 'distributeur de devis'. Qualifiez l'intérêt. S'il ne sait pas ce qu'il veut voir, il ne l'ouvrira jamais."
+    },
+    {
+        id: 41,
+        category: "Psychologie",
+        scenario: "Le client a un ego surdimensionné et pense tout savoir sur le marketing.",
+        options: [
+            { id: "a", text: "Je lui prouve qu'il a tort avec des chiffres." },
+            { id: "b", text: "Je flatte son ego : 'Vous avez l'œil ! C'est exactement pour ça qu'on pourrait...", },
+            { id: "c", text: "Je l'ignore." },
+            { id: "d", text: "Je me bats avec lui sur chaque point." }
+        ],
+        correctAnswer: "b",
+        explanation: "Utilisez l'Aïkido verbal. Ne bloquez pas l'ego, utilisez sa force. Validez-le ('Vous avez raison') pour mieux rediriger vers votre solution."
+    },
+    {
+        id: 42,
+        category: "Prospection",
+        scenario: "Vous appelez un prospect, il répond : 'Je ne suis pas intéressé' avant même de savoir qui vous êtes.",
+        options: [
+            { id: "a", text: "Vous ne savez même pas ce que je vends !" },
+            { id: "b", text: "Au revoir." },
+            { id: "c", text: "'C'est normal, je n'ai rien proposé encore ! Je vous appelais juste pour vérifier si vous acceptiez encore de nouveaux clients sur Kénitra ?'" },
+            { id: "d", text: "Je continue mon script sans écouter." }
+        ],
+        correctAnswer: "c",
+        explanation: "Le 'Pattern Interrupt'. Une phrase inattendue qui inverse les rôles (c'est vous qui lui apportez du business ?) force l'écoute."
+    },
+    {
+        id: 43,
+        category: "Vente",
+        scenario: "Le client demande : 'Est-ce que je serai premier sur Google en 1 mois ?'.",
+        options: [
+            { id: "a", text: "Oui, facile." },
+            { id: "b", text: "Non. Si quelqu'un vous dit oui, c'est un menteur. Le SEO est un marathon, mais on verra des progrès dès le mois 3." },
+            { id: "c", text: "Peut-être, ça dépend." },
+            { id: "d", text: "Avec Google Ads oui, mais pas en SEO." }
+        ],
+        correctAnswer: "b",
+        explanation: "L'autorité se gagne par la vérité, même si elle déçoit au début. Vous le protégez des attentes irréalistes et des charlatans."
+    },
+    {
+        id: 44,
+        category: "Offre GHM",
+        scenario: "Le client hésite entre un Community Management simple et une stratégie Ads payante.",
+        options: [
+            { id: "a", text: "Prenez le moins cher (CM)." },
+            { id: "b", text: "Le CM c'est pour l'image, les Ads c'est pour le Cash. Quel est votre priorité ce mois-ci : être beau ou être riche ?" },
+            { id: "c", text: "Prenez les deux." },
+            { id: "d", text: "Je ne sais pas." }
+        ],
+        correctAnswer: "b",
+        explanation: "La 'Dichotomie Simplifiée'. Résumez le choix complexe en une alternative simple et impactante qui guide vers la solution la plus rentable (Ads)."
+    },
+    {
+        id: 45,
+        category: "Gestion Client",
+        scenario: "Le client ne vous a pas envoyé les photos pour son site depuis 2 mois. Le projet est bloqué.",
+        options: [
+            { id: "a", text: "J'attends sans rien dire." },
+            { id: "b", text: "Je ferme le projet et je garde l'acompte." },
+            { id: "c", text: "J'appelle : 'M. le Client, sans les photos vendredi, on devra décaler le lancement à dans 3 mois car mon planning se remplit. On fait quoi (a) ou (b) ?'." },
+            { id: "d", text: "Je mets des photos banque d'images sans lui dire." }
+        ],
+        correctAnswer: "c",
+        explanation: "Créez l'urgence par la perte (Fear Of Missing Out/Loss). La peur de perdre sa place dans le planning est plus motivante que l'envie de finir."
+    },
+    {
+        id: 46,
+        category: "Closing",
+        scenario: "Le dernier rendez-vous s'est bien passé, mais silence radio depuis 1 semaine.",
+        options: [
+            { id: "a", text: "J'envoie un mail : 'Alors ?'." },
+            { id: "b", text: "J'appelle pour donner une info de valeur : 'J'ai vu une news sur votre secteur ce matin, ça confirme qu'on doit lancer la campagne vite...'." },
+            { id: "c", text: "Je laisse tomber." },
+            { id: "d", text: "Je vais camper devant son bureau." }
+        ],
+        correctAnswer: "b",
+        explanation: "Ne relancez jamais 'pour prendre des nouvelles'. Relancez toujours 'pour donner de la valeur'. Ça garde la porte ouverte sans faire mendiant."
+    },
+    {
+        id: 47,
+        category: "Négociation",
+        scenario: "Le client : 'Je signe si vous m'offrez le logo gratuitement'.",
+        options: [
+            { id: "a", text: "Ok, c'est offert." },
+            { id: "b", text: "Non le logo c'est payant." },
+            { id: "c", text: "D'accord pour le logo offert, MAIS on signe sur un engagement de 6 mois au lieu de 3. Deal ?" },
+            { id: "d", text: "Je vais demander à mon patron." }
+        ],
+        correctAnswer: "c",
+        explanation: "Le 'Give and Take'. Ne donnez jamais rien gratuitement. Échangez-le contre quelque chose de valeur égale ou supérieure."
+    },
+    {
+        id: 48,
+        category: "Écoute",
+        scenario: "Le client utilise des mots vagues : 'Je veux un site moderne qui pète'.",
+        options: [
+            { id: "a", text: "Je dis 'Ok super' et je fais n'importe quoi." },
+            { id: "b", text: "Je creuse : 'C'est quoi 'moderne' pour vous ? Avez-vous 3 exemples de sites que vous adorez et 3 que vous détestez ?'" },
+            { id: "c", text: "Je lui montre mes templates." },
+            { id: "d", text: "Je lui vends le template le plus cher." }
+        ],
+        correctAnswer: "b",
+        explanation: "Clarifier, c'est vendre. Si vous ne définissez pas ses termes, vous allez travailler pour rien et il sera déçu."
+    },
+    {
+        id: 49,
+        category: "Confiance",
+        scenario: "Le client a peur de vous donner ses codes d'accès Facebook/Google.",
+        options: [
+            { id: "a", text: "Je m'énerve." },
+            { id: "b", text: "Je lui propose de signer un NDA (Accord de confidentialité) et je lui montre comment me donner un accès 'Partenaire' sans donner son mot de passe personnel." },
+            { id: "c", text: "Je lui demande de tout faire lui-même." },
+            { id: "d", text: "Je pirate son compte." }
+        ],
+        correctAnswer: "b",
+        explanation: "Rassurez par la technique et le juridique. Montrez que vous maîtrisez les outils pro (Business Manager) qui protègent sa sécurité."
+    },
+    {
+        id: 50,
+        category: "Vision",
+        scenario: "Le client veut arrêter sa pub car 'c'est l'été et tout le monde est en vacances'.",
+        options: [
+            { id: "a", text: "Ok on arrête." },
+            { id: "b", text: "Erreur ! Pendant que vos concurrents arrêtent, le coût par clic baisse. C'est le moment de prendre des parts de marché à bas prix pour la rentrée." },
+            { id: "c", text: "Je lui dis qu'il est bête." },
+            { id: "d", text: "Je continue la pub sans lui dire." }
+        ],
+        correctAnswer: "b",
+        explanation: "Le Consultant voit ce que le client ne voit pas. Vendez le 'Contre-cyclique'. Quand les autres dorment, les leaders gagnent du terrain."
     }
 ];
