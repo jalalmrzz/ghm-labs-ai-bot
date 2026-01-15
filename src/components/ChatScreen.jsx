@@ -231,7 +231,8 @@ const ChatScreen = ({ onBack }) => {
                         <span>GROQ: LNK</span>
                         <div className="led led-yellow led-blink" />
                     </div>
-                    <a href="https://github.com/jalalmrzz/ghm-labs-ai-bot" target="_blank" rel="noopener noreferrer" className="status-item" style={{ cursor: 'pointer', marginLeft: '10px' }}>
+                    <a href="https://github.com/jalalmrzz/ghm-labs-ai-bot" target="_blank" rel="noopener noreferrer" className="status-item" style={{ cursor: 'pointer', marginLeft: '10px', textDecoration: 'none' }}>
+                        <span>GITHUB LINK</span>
                         <Download size={16} color="#00ffcc" />
                     </a>
                 </div>
