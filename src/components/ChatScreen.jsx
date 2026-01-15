@@ -5,7 +5,8 @@ import {
     Bot,
     User,
     ChevronDown,
-    PlusCircle
+    PlusCircle,
+    Download
 } from 'lucide-react';
 import { sendMessageToBot } from '../lib/api/ghmBotAPI';
 
@@ -230,6 +231,9 @@ const ChatScreen = ({ onBack }) => {
                         <span>GROQ: LNK</span>
                         <div className="led led-yellow led-blink" />
                     </div>
+                    <a href="https://github.com/jalalmrzz/ghm-labs-ai-bot" target="_blank" rel="noopener noreferrer" className="status-item" style={{ cursor: 'pointer', marginLeft: '10px' }}>
+                        <Download size={16} color="#00ffcc" />
+                    </a>
                 </div>
             </div>
 
